@@ -24,11 +24,11 @@
     },
     {
       "question": "Did you submit this project to the official Frontier Hackathon on Colosseum? (Yes/No)",
-      "answer": "REQUIRED_OPERATOR_GATE"
+      "answer": "No - Colosseum account/profile is registered; project submission still needs to be completed on Colosseum."
     },
     {
       "question": "Link to your project's Colosseum profile",
-      "answer": "REQUIRED_OPERATOR_GATE"
+      "answer": "https://arena.colosseum.org/profiles/billyhovers"
     },
     {
       "question": "Link to your Loom / Demo Video",
@@ -40,7 +40,7 @@
     },
     {
       "question": "Developer Platform account email",
-      "answer": "REQUIRED_OPERATOR_GATE"
+      "answer": "PRIVATE_SUBMITTED_VIA_AGENT_API"
     }
   ]
 }

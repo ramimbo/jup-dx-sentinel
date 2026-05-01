@@ -53,13 +53,13 @@ https://github.com/ramimbo/jup-dx-sentinel
 Did you submit this project to the official Frontier Hackathon on Colosseum? (Yes/No):
 
 ```text
-REQUIRED_OPERATOR_GATE
+No - Colosseum account/profile is registered; project submission still needs to be completed on Colosseum.
 ```
 
 Link to your project's Colosseum profile:
 
 ```text
-REQUIRED_OPERATOR_GATE
+https://arena.colosseum.org/profiles/billyhovers
 ```
 
 Link to your Loom / Demo Video:
@@ -77,24 +77,32 @@ optional
 Developer Platform account email:
 
 ```text
-REQUIRED_OPERATOR_GATE
+PRIVATE_SUBMITTED_VIA_AGENT_API
 ```
 
-## Remaining Gates
+## Submission Status
 
-1. Sign in to https://developers.jup.ag/portal, create or confirm the Jupiter Developer Platform account, and provide the account email.
-2. Create or confirm the Colosseum Frontier project profile required by the Superteam form. The official rules say individual Colosseum registration must be completed before 11:59pm PT on 2026-05-04, and project submission closes at 11:59pm PT on 2026-05-11.
-3. Replace the `REQUIRED_OPERATOR_GATE` placeholders in `superteam-submission.draft.json`.
-4. Submit with:
+Submitted via the Superteam Earn agent API on 2026-05-01T21:14:36Z.
+
+Submission ID:
+
+```text
+31497a06-97c1-4623-9371-8f8404a33ff7
+```
+
+Status returned by API:
+
+```text
+Pending
+```
+
+## Remaining Follow-Up
+
+1. Create/submit the Jup DX Sentinel project on Colosseum Frontier if the Superteam reviewers require a project-specific Colosseum URL rather than the registered profile URL. The official rules say individual Colosseum registration must be completed before 11:59pm PT on 2026-05-04, and project submission closes at 11:59pm PT on 2026-05-11.
+2. If a project-specific Colosseum URL exists and Superteam allows updates, replace the profile URL and change the Colosseum answer to `Yes`.
+3. Check local receipt:
 
 ```bash
 cd /home/ubuntu
-scripts/superteam_agent_cli.py submit jup_dx_sentinel/superteam-submission.draft.json --yes
-```
-
-Dry run:
-
-```bash
-cd /home/ubuntu
-scripts/superteam_agent_cli.py submit jup_dx_sentinel/superteam-submission.draft.json --dry-run
+sed -n '1,120p' data/jupiter_superteam_submission_receipt.md
 ```

@@ -48,3 +48,9 @@ The project exercises the Developer Platform path that the bounty asks agents to
 - a concrete DX report with specific friction notes
 
 The first public version is deliberately small so the report can focus on real integration details rather than a broad unfinished app.
+
+## Submission Packet
+
+The Superteam submission draft is in `SUBMISSION-PACKET.md`, with machine-readable payload data in `superteam-submission.draft.json`.
+
+The remaining gates are external account fields: Jupiter Developer Platform account email and the required Frontier/Colosseum project profile.

@@ -1,0 +1,46 @@
+{
+  "listingId": "9a42cdbf-f931-4560-9663-99afe37e5656",
+  "link": "https://github.com/ramimbo/jup-dx-sentinel",
+  "eligibilityAnswers": [
+    {
+      "question": "Project Title",
+      "answer": "Jup DX Sentinel"
+    },
+    {
+      "question": "Project Description",
+      "answer": "Read-only Jupiter Developer Platform experiment that combines Tokens API search, Price API V3, and an AI/docs stack probe into a token-quality snapshot plus a concrete DX report. It tests keyless prototyping, API-key production expectations, llms.txt, skill.md, Markdown docs export, OpenAPI specs, and safe CLI discovery without wallet signatures or transaction-writing calls."
+    },
+    {
+      "question": "Project Github Link",
+      "answer": "https://github.com/ramimbo/jup-dx-sentinel"
+    },
+    {
+      "question": "Feedback doc/markdown file",
+      "answer": "https://github.com/ramimbo/jup-dx-sentinel/blob/master/DX-REPORT.md"
+    },
+    {
+      "question": "Project Website",
+      "answer": "https://github.com/ramimbo/jup-dx-sentinel"
+    },
+    {
+      "question": "Did you submit this project to the official Frontier Hackathon on Colosseum? (Yes/No)",
+      "answer": "REQUIRED_OPERATOR_GATE"
+    },
+    {
+      "question": "Link to your project's Colosseum profile",
+      "answer": "REQUIRED_OPERATOR_GATE"
+    },
+    {
+      "question": "Link to your Loom / Demo Video",
+      "answer": ""
+    },
+    {
+      "question": "Presentation Link",
+      "answer": ""
+    },
+    {
+      "question": "Developer Platform account email",
+      "answer": "REQUIRED_OPERATOR_GATE"
+    }
+  ]
+}

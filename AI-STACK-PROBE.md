@@ -1,19 +1,19 @@
 # Jupiter AI Stack Probe
 
-Generated: 2026-05-01T20:57:11+00:00
+Generated: 2026-05-01T21:03:00+00:00
 Token query: `JUP`
 
 ## Surface Checks
 
 | Surface | Status | Final URL | Content Type |
 | --- | ---: | --- | --- |
-| `llms.txt` | 200 in 563ms | https://developers.jup.ag/docs/llms.txt | `text/plain; charset=utf-8` |
-| `skill.md` | 200 in 46ms | https://developers.jup.ag/docs/skill.md | `text/markdown; charset=utf-8` |
-| `ai-overview-md` | 200 in 136ms | https://developers.jup.ag/docs/ai.md | `text/markdown; charset=utf-8` |
-| `tokens-md` | 200 in 112ms | https://developers.jup.ag/docs/tokens/token-information.md | `text/markdown; charset=utf-8` |
-| `price-md` | 200 in 278ms | https://developers.jup.ag/docs/price.md | `text/markdown; charset=utf-8` |
-| `tokens-openapi` | 200 in 52ms | https://developers.jup.ag/docs/openapi-spec/tokens/v2/tokens.yaml | `application/octet-stream, text/yaml` |
-| `price-openapi` | 200 in 65ms | https://developers.jup.ag/docs/openapi-spec/price/v3/price.yaml | `application/octet-stream, text/yaml` |
+| `llms.txt` | 200 in 699ms | https://developers.jup.ag/docs/llms.txt | `text/plain; charset=utf-8` |
+| `skill.md` | 200 in 70ms | https://developers.jup.ag/docs/skill.md | `text/markdown; charset=utf-8` |
+| `ai-overview-md` | 200 in 146ms | https://developers.jup.ag/docs/ai.md | `text/markdown; charset=utf-8` |
+| `tokens-md` | 200 in 482ms | https://developers.jup.ag/docs/tokens/token-information.md | `text/markdown; charset=utf-8` |
+| `price-md` | 200 in 236ms | https://developers.jup.ag/docs/price.md | `text/markdown; charset=utf-8` |
+| `tokens-openapi` | 200 in 74ms | https://developers.jup.ag/docs/openapi-spec/tokens/v2/tokens.yaml | `application/octet-stream, text/yaml` |
+| `price-openapi` | 200 in 71ms | https://developers.jup.ag/docs/openapi-spec/price/v3/price.yaml | `application/octet-stream, text/yaml` |
 
 ## Parsed Signals
 
@@ -28,8 +28,8 @@ Token query: `JUP`
 
 ## Read-Only API Smoke
 
-- Tokens search status: 200 in 86ms; returned 20 rows.
-- Price V3 status: 200 in 90ms; returned 5 priced mints.
+- Tokens search status: 200 in 93ms; returned 20 rows.
+- Price V3 status: 200 in 76ms; returned 5 priced mints.
 
 ## CLI Registry Check
 

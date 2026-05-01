@@ -70,4 +70,4 @@ I added `jup_ai_stack_probe.py` and generated `AI-STACK-PROBE.md`.
 
 ## Submission Readiness
 
-To finish the bounty submission cleanly, the remaining operator-gated item is a Jupiter Developer Platform account/API key and the account email required by the listing. The project itself runs in keyless mode and is ready to publish/update as a public GitHub repo.
+To finish the bounty submission cleanly, the remaining operator-gated items are the Jupiter Developer Platform account email and the required Frontier/Colosseum project profile. The project itself runs in keyless mode, the DX report is public, and `SUBMISSION-PACKET.md` contains the prepared Superteam answers.

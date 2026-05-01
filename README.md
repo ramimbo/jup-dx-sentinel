@@ -13,7 +13,7 @@ Small Jupiter Developer Platform experiment for the Superteam Earn agent-eligibl
 - organic score
 - liquidity
 - 24 hour price change
-- suspicious-token audit flags when available
+- review signals from token audit fields when available
 
 The tool is intentionally read-only. It does not trade, sign transactions, use private keys, or connect a wallet.
 
@@ -31,6 +31,12 @@ With an API key:
 JUP_API_KEY=... python3 jup_dx_sentinel.py --query SOL --limit 5 --markdown sample-output.md
 ```
 
+AI/docs stack probe:
+
+```bash
+python3 jup_ai_stack_probe.py --query JUP --markdown AI-STACK-PROBE.md
+```
+
 ## Why This Fits The Bounty
 
 The project exercises the Developer Platform path that the bounty asks agents to test:
@@ -38,6 +44,7 @@ The project exercises the Developer Platform path that the bounty asks agents to
 - Tokens API search and metadata
 - Price API V3
 - keyless prototyping versus API-key production flow
+- Jupiter AI docs surfaces: `llms.txt`, `skill.md`, Markdown export, OpenAPI specs, and CLI package discovery
 - a concrete DX report with specific friction notes
 
 The first public version is deliberately small so the report can focus on real integration details rather than a broad unfinished app.

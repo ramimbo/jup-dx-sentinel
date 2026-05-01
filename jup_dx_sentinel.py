@@ -70,7 +70,7 @@ def fmt_pct(value):
     return f"{value:+.2f}%"
 
 
-def suspicious_flags(token):
+def review_signals(token):
     audit = token.get("audit") or {}
     flags = []
     if audit.get("isSus"):
@@ -83,7 +83,7 @@ def suspicious_flags(token):
         flags.append("freeze authority enabled")
     top_holders = audit.get("topHoldersPercentage")
     if isinstance(top_holders, (int, float)) and top_holders > 50:
-        flags.append(f"top holders {top_holders:.1f}%")
+        flags.append(f"concentrated holders {top_holders:.1f}%")
     return ", ".join(flags) if flags else "none observed"
 
 
@@ -96,7 +96,7 @@ def build_markdown(query, tokens, prices, used_api_key):
         f"Query: `{query}`",
         f"Mode: {'API key' if used_api_key else 'keyless prototype'}",
         "",
-        "| Symbol | Name | Verified | Organic | Liquidity | USD | 24h | Flags | Mint |",
+        "| Symbol | Name | Verified | Organic | Liquidity | USD | 24h | Review Signals | Mint |",
         "| --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- |",
     ]
     for token in tokens:
@@ -111,7 +111,7 @@ def build_markdown(query, tokens, prices, used_api_key):
                 liquidity=fmt_money(token.get("liquidity")),
                 usd=fmt_money(price.get("usdPrice", token.get("usdPrice"))),
                 change=fmt_pct(price.get("priceChange24h", (token.get("stats24h") or {}).get("priceChange"))),
-                flags=suspicious_flags(token).replace("|", "\\|"),
+                flags=review_signals(token).replace("|", "\\|"),
                 mint=mint,
             )
         )
@@ -121,6 +121,7 @@ def build_markdown(query, tokens, prices, used_api_key):
         "",
         "- Read-only integration: no wallet connection, signatures, swaps, or private keys.",
         "- Token search already includes rich metadata; Price API V3 is needed for a consistent current price payload.",
+        "- Review signals are prompts for human inspection, not automatic scam or trade recommendations.",
         "- Keyless mode is enough for testing, but production usage should send `x-api-key`.",
     ])
     return "\n".join(lines) + "\n"

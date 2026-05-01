@@ -83,7 +83,7 @@ REQUIRED_OPERATOR_GATE
 ## Remaining Gates
 
 1. Sign in to https://developers.jup.ag/portal, create or confirm the Jupiter Developer Platform account, and provide the account email.
-2. Create or confirm the Colosseum Frontier project profile required by the Superteam form.
+2. Create or confirm the Colosseum Frontier project profile required by the Superteam form. The official rules say individual Colosseum registration must be completed before 11:59pm PT on 2026-05-04, and project submission closes at 11:59pm PT on 2026-05-11.
 3. Replace the `REQUIRED_OPERATOR_GATE` placeholders in `superteam-submission.draft.json`.
 4. Submit with:
 
